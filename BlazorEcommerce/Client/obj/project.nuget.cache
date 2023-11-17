@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SzqdCpgEkT6M6k+YKbaneJohT84Lm4UdT642yA5r2Sxur2nyVP/tm8xG74pKyV54csx8xSrvKF0sjf2wEpylsQ==",
+  "dgSpecHash": "nDEydUjIiKe3A+GSK/txgY014/gorMHtHtQ6yJjjnEJ/8JB+taRxFNWcsdF+J9pvyInS4heTUx3WGCG7dC0Gkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.0\\microsoft.aspnetcore.components.forms.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.0\\microsoft.aspnetcore.components.web.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.0\\microsoft.aspnetcore.components.webassembly.6.0.0.nupkg.sha512",
-    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\6.0.21\\microsoft.aspnetcore.components.webassembly.devserver.6.0.21.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\6.0.0\\microsoft.aspnetcore.components.webassembly.devserver.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.0\\microsoft.aspnetcore.metadata.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

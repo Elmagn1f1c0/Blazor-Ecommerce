@@ -102,7 +102,7 @@
           "build/net6.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/6.0.21": {
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/6.0.0": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
@@ -611,7 +611,7 @@
           "build/net6.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/6.0.21": {
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/6.0.0": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
@@ -1112,10 +1112,10 @@
         "microsoft.aspnetcore.components.webassembly.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebAssembly.DevServer/6.0.21": {
-      "sha512": "+0RQHUDCcUSbCpCTeX0HOXeAQEy4hltXcZuppi1FM4EUSBAPkoUwP4dfFpSgEzlnExQ2zOdh8R20gxcxYVyIaw==",
+    "Microsoft.AspNetCore.Components.WebAssembly.DevServer/6.0.0": {
+      "sha512": "SNnACFWaRSx5o0vnoU2pBTKgfv5LzlwC07H2nBTpq23hj0lZZS1XBiU8heCVxGKsmLYMb+wvxZgyKDICFAZvWQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly.devserver/6.0.21",
+      "path": "microsoft.aspnetcore.components.webassembly.devserver/6.0.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1123,7 +1123,7 @@
         "Icon.png",
         "THIRD-PARTY-NOTICES.txt",
         "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets",
-        "microsoft.aspnetcore.components.webassembly.devserver.6.0.21.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.devserver.6.0.0.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.devserver.nuspec",
         "tools/BlazorDebugProxy/BrowserDebugHost.dll",
         "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
@@ -1784,7 +1784,7 @@
     "net6.0": [
       "BlazorEcommerce.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.0",
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.21"
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -1843,7 +1843,7 @@
           "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[6.0.21, )"
+            "version": "[6.0.0, )"
           }
         },
         "imports": [
