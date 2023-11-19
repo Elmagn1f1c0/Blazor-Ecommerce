@@ -1,7 +1,4 @@
-﻿using BlazorEcommerce.Shared;
-using System.Net.Http.Json;
-
-namespace BlazorEcommerce.Client.Services.ProductServices
+﻿namespace BlazorEcommerce.Client.Services.ProductServices
 {
     public class ProductService : IProductService
     {
@@ -51,21 +48,21 @@ namespace BlazorEcommerce.Client.Services.ProductServices
             return result;
         }
 
-        public async Task GetProducts(string categoryUrl = null)
+        public async Task GetProducts(/*string categoryUrl = null*/)
         {
-            var result = categoryUrl == null ?
-                await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product/featured") :
-                await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/category/{categoryUrl}");
+            var result = /*categoryUrl == null ?*/
+                await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product"); /*:*/
+                //await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/category/{categoryUrl}");
             if (result != null && result.Data != null)
                 Products = result.Data;
 
-            CurrentPage = 1;
-            PageCount = 0;
+            //CurrentPage = 1;
+            //PageCount = 0;
 
-            if (Products.Count == 0)
-                Message = "No products found";
+            //if (Products.Count == 0)
+            //    Message = "No products found";
 
-            ProductsChanged.Invoke();
+            //ProductsChanged.Invoke();
         }
 
         public async Task<List<string>> GetProductSearchSuggestions(string searchText)

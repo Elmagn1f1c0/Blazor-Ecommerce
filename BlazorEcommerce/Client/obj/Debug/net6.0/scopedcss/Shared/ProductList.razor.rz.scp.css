@@ -9,23 +9,11 @@
 .media-img:hover[b-fx5atut3jr] {
     transform: scale(1.1);
 }
-.media[b-fx5atut3jr] {
-    display: flex;
-    align-items: flex-start;
-}
-
-.media-body[b-fx5atut3jr] {
-    flex: 1;
-    margin-left: 1px;
-} 
-
+ 
 
 .media-img-wrapper[b-fx5atut3jr] {
     width: 200px;
     text-align: center;
-}
-.price[b-fx5atut3jr] {
-    color: green;
 }
 
 .page-selection[b-fx5atut3jr] {

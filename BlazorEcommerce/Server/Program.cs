@@ -1,7 +1,9 @@
 global using BlazorEcommerce.Shared;
 global using Microsoft.EntityFrameworkCore;
 global using BlazorEcommerce.Server.Data;
+global using BlazorEcommerce.Server.Services.ProductService;
 using Microsoft.AspNetCore.ResponseCompression;
+
 
 namespace BlazorEcommerce
 {
@@ -22,6 +24,7 @@ namespace BlazorEcommerce
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+            builder.Services.AddScoped<IProductservice , ProductService>();
 
             var app = builder.Build();
 
