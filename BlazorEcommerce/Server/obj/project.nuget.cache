@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "leUwRimG2ouWBdO8tJ5kBlASTxbv/ljOS9o+C+T/bZtI4wEHoq0cUjaj1CRTqsZK+kp7RS1xfgMZrbavn6GT+w==",
+  "dgSpecHash": "7v6uoBLEgZruJmxYIEt6qjqEWDJkao1y99tOhHH4OfkRtAsleHmCISMnleHLaaB3udVYIq7QHMRqgS2UuCoQXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Server\\BlazorEcommerce.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\blazored.localstorage\\4.4.0\\blazored.localstorage.4.4.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.0\\microsoft.aspnetcore.components.6.0.0.nupkg.sha512",

@@ -4,6 +4,7 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorEcommerce.Client.pdb
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorEcommerce.Shared.dll
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorEcommerce.Shared.pdb
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.22.sf4y6wvoo0.js
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm
@@ -317,6 +318,7 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.Brotli.dll.gz
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.InteropServices.RuntimeInformation.dll.gz
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.dll.gz
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.DriveInfo.dll.gz
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Tasks.dll.gz
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Immutable.dll.gz
@@ -404,6 +406,7 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\BlazorEcommerce.Client.staticwebassets.runtime.json
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\BlazorEcommerce.Client.dll
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\BlazorEcommerce.Client.pdb
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\Blazored.LocalStorage.dll
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -608,6 +611,7 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\BlazorEcommerce.Client.AssemblyInfo.cs
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\BlazorEcommerce.Client.csproj.CoreCompileInputs.cache
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\BlazorEcommerce.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\NDJRhClr.gz
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\BikbRxUa.gz
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\RqPDGe+G.gz
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\twJ04yEz.gz
@@ -817,9 +821,13 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\FeaturedProducts.razor.rz.scp.css
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\HomeButton.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ProductList.razor.rz.scp.css
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopLayout.razor.rz.scp.css
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopNavMenu.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\ProductDetails.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\bundle\BlazorEcommerce.Client.styles.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\projectbundle\BlazorEcommerce.Client.bundle.scp.css
@@ -828,3 +836,4 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\refint\BlazorEcommerce.Client.dll
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\BlazorEcommerce.Client.pdb
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\ref\BlazorEcommerce.Client.dll
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Cart.razor.rz.scp.css
