@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Blazored.LocalStorage;
 using BlazorEcommerce.Client.Services.CartService;
+using BlazorEcommerce.Client.Services;
 
 namespace BlazorEcommerce.Client
 {

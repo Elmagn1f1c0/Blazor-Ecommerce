@@ -1,0 +1,68 @@
+﻿@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<div class="dropdown" @onclick:preventDefault>
+    <button @onclick="ToggleUserMenu"
+            class="btn btn-secondary dropdown-toggle user-button">
+        <i class="oi oi-person"></i>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right @UserMenuCssClass">
+        <a href="register" class="dropdown-item" @onclick="NavigateToRegister">Register</a>
+    </div>
+</div>
+
+@code {
+    private bool showUserMenu = false;
+
+    private string UserMenuCssClass => showUserMenu ? "show-menu" : null;
+
+    private void ToggleUserMenu()
+    {
+        showUserMenu = !showUserMenu;
+    }
+
+    private async Task NavigateToRegister()
+    {
+        showUserMenu = false;
+        await Task.Delay(100);
+        NavigationManager.NavigateTo("/register");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("registerDropdownHandler");
+        }
+    }
+}
+<script>
+    window.registerDropdownHandler = function () {
+        const dropdown = document.querySelector('.dropdown');
+        const userMenu = dropdown.querySelector('.dropdown-menu');
+
+        dropdown.addEventListener('click', function (event) {
+            event.stopPropagation();
+            const targetElement = event.target;
+
+            if (!userMenu.contains(targetElement)) {
+                hideUserMenu();
+            }
+        });
+
+        function toggleUserMenu() {
+            userMenu.classList.toggle('show-menu');
+        }
+
+        function hideUserMenu() {
+            userMenu.classList.remove('show-menu');
+        }
+
+        dropdown.querySelector('.user-button').addEventListener('click', function (event) {
+            event.stopPropagation(); 
+            toggleUserMenu();
+        });
+    };
+</script>
+
+
