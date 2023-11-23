@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Blazored.LocalStorage;
 using BlazorEcommerce.Client.Services.CartService;
 using BlazorEcommerce.Client.Services;
+using BlazorEcommerce.Client.Services.AuthService;
 
 namespace BlazorEcommerce.Client
 {
@@ -23,6 +24,7 @@ namespace BlazorEcommerce.Client
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<ICartService, CartService>();
+            builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddBlazoredLocalStorage();
 
             await builder.Build().RunAsync();
