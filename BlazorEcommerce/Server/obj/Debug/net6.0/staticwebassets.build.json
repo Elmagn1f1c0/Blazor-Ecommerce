@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/uyjvSlQaryxt+2wcA+thJCkouvQEJkAOYSyIQ7s4K0=",
+  "Hash": "NNogxRr4mDawB3ng90iElHPY6WG/l/x1Rv6sSklH384=",
   "Source": "BlazorEcommerce.Server",
   "BasePath": "_content/BlazorEcommerce.Server",
   "Mode": "Default",
@@ -282,6 +282,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "BlazorEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -4906,6 +4923,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Primitives.dll"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\HwFzKO8Q.gz",
+      "SourceId": "BlazorEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\hz3vqD7x.gz",

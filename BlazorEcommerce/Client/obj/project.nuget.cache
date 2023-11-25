@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "emFaMr28liH5X1aQOYaqLZY2AwmegQVAbUX1RZf0Z9g3yvakRmesQ1bGaJksb+js49M1r8fIz/NBpkU9rLPcsg==",
+  "dgSpecHash": "j+rN9NreHgGKFhEg76Utn5xOQUcglQKzrh/12x1pkPcs97I9WDfKm8BKttX3MqO4h2Ct23ZCieoe4y4e2vXHtg==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.0\\microsoft.aspnetcore.components.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.0\\microsoft.aspnetcore.components.analyzers.6.0.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.0\\microsoft.aspnetcore.components.authorization.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.0\\microsoft.aspnetcore.components.forms.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.0\\microsoft.aspnetcore.components.web.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.0\\microsoft.aspnetcore.components.webassembly.6.0.0.nupkg.sha512",

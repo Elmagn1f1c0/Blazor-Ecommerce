@@ -1,5 +1,8 @@
 ﻿@inject IJSRuntime JSRuntime
 @inject NavigationManager NavigationManager
+@inject ILocalStorageService LocalStorage
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
 
 <div class="dropdown" @onclick:preventDefault>
     <button @onclick="ToggleUserMenu"
@@ -7,8 +10,15 @@
         <i class="oi oi-person"></i>
     </button>
     <div class="dropdown-menu dropdown-menu-right @UserMenuCssClass">
-        <a href="register" class="dropdown-item" @onclick="NavigateToRegister">Register</a>
- 
+        <AuthorizeView>
+            <Authorized>
+                <button class="dropdown-item" @onclick="Logout">Logout</button>
+            </Authorized>
+            <NotAuthorized>
+                <a href="login" class="dropdown-item" @onclick="NavigateToLogin">Login</a>
+                <a href="register" class="dropdown-item" @onclick="NavigateToRegister">Register</a>
+            </NotAuthorized>
+        </AuthorizeView>
     </div>
 </div>
 
@@ -28,42 +38,18 @@
         await Task.Delay(100);
         NavigationManager.NavigateTo("/register");
     }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    private async Task NavigateToLogin()
     {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeVoidAsync("registerDropdownHandler");
-        }
+        showUserMenu = false;
+        await Task.Delay(100);
+        NavigationManager.NavigateTo("/login");
     }
+    private async Task Logout()
+    {
+        await LocalStorage.RemoveItemAsync("authToken");
+        await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        NavigationManager.NavigateTo("/");
+        
+    }
+
 }
-<script>
-    window.registerDropdownHandler = function () {
-        const dropdown = document.querySelector('.dropdown');
-        const userMenu = dropdown.querySelector('.dropdown-menu');
-
-        dropdown.addEventListener('click', function (event) {
-            event.stopPropagation();
-            const targetElement = event.target;
-
-            if (!userMenu.contains(targetElement)) {
-                hideUserMenu();
-            }
-        });
-
-        function toggleUserMenu() {
-            userMenu.classList.toggle('show-menu');
-        }
-
-        function hideUserMenu() {
-            userMenu.classList.remove('show-menu');
-        }
-
-        dropdown.querySelector('.user-button').addEventListener('click', function (event) {
-            event.stopPropagation(); 
-            toggleUserMenu();
-        });
-    };
-</script>
-
-
