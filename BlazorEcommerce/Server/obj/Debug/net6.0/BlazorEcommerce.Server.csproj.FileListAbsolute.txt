@@ -81,3 +81,4 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Server\obj\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Server\obj\Debug\net6.0\BlazorEcommerce.Server.pdb
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Server\obj\Debug\net6.0\BlazorEcommerce.Server.genruntimeconfig.cache
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Server\obj\Debug\net6.0\ref\BlazorEcommerce.Server.dll
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

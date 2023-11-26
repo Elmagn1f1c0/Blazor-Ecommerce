@@ -12,10 +12,12 @@
     <div class="dropdown-menu dropdown-menu-right @UserMenuCssClass">
         <AuthorizeView>
             <Authorized>
+                <a href="profile" class="dropdown-item" @onclick="NavigateToProfile">Profile</a>
+                <hr />
                 <button class="dropdown-item" @onclick="Logout">Logout</button>
             </Authorized>
             <NotAuthorized>
-                <a href="login" class="dropdown-item" @onclick="NavigateToLogin">Login</a>
+                <a href="login?returnUrl=@NavigationManager.ToBaseRelativePath(NavigationManager.Uri)" class="dropdown-item" @onclick="NavigateToLogin">Login</a>
                 <a href="register" class="dropdown-item" @onclick="NavigateToRegister">Register</a>
             </NotAuthorized>
         </AuthorizeView>
@@ -30,6 +32,12 @@
     private void ToggleUserMenu()
     {
         showUserMenu = !showUserMenu;
+    }
+    private async Task NavigateToProfile()
+    {
+        showUserMenu = false;
+        await Task.Delay(100);
+        NavigationManager.NavigateTo("/profile");
     }
 
     private async Task NavigateToRegister()
@@ -49,7 +57,6 @@
         await LocalStorage.RemoveItemAsync("authToken");
         await AuthenticationStateProvider.GetAuthenticationStateAsync();
         NavigationManager.NavigateTo("/");
-        
     }
 
 }
