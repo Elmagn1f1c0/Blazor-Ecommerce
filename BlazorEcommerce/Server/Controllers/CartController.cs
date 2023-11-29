@@ -55,5 +55,12 @@ namespace BlazorEcommerce.Server.Controllers
             var result = await _cartService.UpdateQuantity(cartItem);
             return Ok(result);
         }
+
+        [HttpDelete("{productId}/{productTypeId}")]
+        public async Task<ActionResult<ServiceResponse<bool>>> RemoveItemFromCart(int productId, int productTypeId)
+        {
+            var result = await _cartService.RemoveItemFromCart(productId, productTypeId);
+            return Ok(result);
+        }
     }
 }
