@@ -1,6 +1,4 @@
-﻿using BlazorEcommerce.Server.Services.CartService;
-using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorEcommerce.Server.Controllers
 {
