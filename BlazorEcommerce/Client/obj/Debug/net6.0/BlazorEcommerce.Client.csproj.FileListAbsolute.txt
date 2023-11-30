@@ -842,6 +842,7 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopLayout.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopNavMenu.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\UserButton.razor.rz.scp.css
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Orders.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\ProductDetails.razor.rz.scp.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\bundle\BlazorEcommerce.Client.styles.css
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\projectbundle\BlazorEcommerce.Client.bundle.scp.css
