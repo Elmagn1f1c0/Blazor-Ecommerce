@@ -1,21 +1,18 @@
-﻿using BlazorEcommerce.Server.Services.CartService;
-using System.Security.Claims;
-
-namespace BlazorEcommerce.Server.Services.OrderService
+﻿namespace BlazorEcommerce.Server.Services.OrderService
 {
     public class OrderService : IOrderService
     {
         private readonly DataContext _context;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IAuthService _authService;
         private readonly ICartService _cartService;
 
-        public OrderService(DataContext context, IHttpContextAccessor httpContextAccessor, ICartService cartService)
+        public OrderService(DataContext context, IAuthService authService, ICartService cartService)
         {
             _context = context;
-            _httpContextAccessor = httpContextAccessor;
+            _authService = authService;
+            
             _cartService = cartService;
         }
-        private int GetUserId() => int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
 
         public async Task<ServiceResponse<bool>> PlaceOrder()
         {
@@ -34,7 +31,7 @@ namespace BlazorEcommerce.Server.Services.OrderService
 
             var order = new Order
             {
-                UserId = GetUserId(),
+                UserId = _authService.GetUserId(),
                 OrderDate = DateTime.Now,
                 TotalPrice = totalPrice,
                 OrderItems = orderItems
@@ -43,7 +40,7 @@ namespace BlazorEcommerce.Server.Services.OrderService
 
             _context.Orders.Add(order);
 
-            _context.CartItems.RemoveRange(_context.CartItems.Where(c => c.UserId == GetUserId()));
+            _context.CartItems.RemoveRange(_context.CartItems.Where(c => c.UserId == _authService.GetUserId()));
 
             await _context.SaveChangesAsync();
 
