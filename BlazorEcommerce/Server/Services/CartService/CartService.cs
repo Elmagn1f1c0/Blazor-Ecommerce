@@ -73,9 +73,11 @@
             };
         }
 
-        public async Task<ServiceResponse<List<CartProductResponse>>> GetDbCartProducts()
+        public async Task<ServiceResponse<List<CartProductResponse>>> GetDbCartProducts(int? userId = null)
         {
-            return await GetCartProducts(await _context.CartItems.Where(i => i.UserId == _authService.GetUserId()).ToListAsync());
+            if(userId == null)
+                userId = _authService.GetUserId();
+            return await GetCartProducts(await _context.CartItems.Where(i => i.UserId == userId).ToListAsync());
         }
 
         public async Task<ServiceResponse<bool>> AddToCart(CartItem cartItem)
