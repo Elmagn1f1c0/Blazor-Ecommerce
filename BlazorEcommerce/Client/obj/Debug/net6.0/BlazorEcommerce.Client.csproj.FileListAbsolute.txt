@@ -852,3 +852,5 @@ C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\D
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\refint\BlazorEcommerce.Client.dll
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\BlazorEcommerce.Client.pdb
 C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\ref\BlazorEcommerce.Client.dll
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\AdminMenu.razor.rz.scp.css
+C:\Users\hp\Desktop\BlazorEcommerce\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Admin\Categories.razor.rz.scp.css
