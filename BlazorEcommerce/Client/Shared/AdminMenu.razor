@@ -4,13 +4,23 @@
 
 @if (authorized)
 {
-    <a class="dropdown-item" href="admin/categories" @onclick="NavigateToCategories">Categories</a>
-    <a class="dropdown-item" href="admin/product-types" @onclick="NavigateToProductTypes">Product Types</a>
+    <a class="dropdown-item" @onclick:preventDefault href="admin/categories" @onclick="NavigateToCategories">Categories</a>
+    <a class="dropdown-item" @onclick:preventDefault href="admin/product-types" @onclick="NavigateToProductTypes">Product Types</a>
+    <a class="dropdown-item" @onclick:preventDefault href="admin/products" @onclick="NavigateToProducts">Products</a>
     <hr />
 }
 
 @code {
     bool authorized = false;
+    private bool showUserMenu = false;
+
+    private string UserMenuCssClass => showUserMenu ? "show-menu" : null;
+
+
+    private void ToggleUserMenu()
+    {
+        showUserMenu = !showUserMenu;
+    }
 
 
     protected override async Task OnInitializedAsync()
@@ -24,13 +34,21 @@
     }
     private async Task NavigateToCategories()
     {
+        showUserMenu = false;
         await Task.Delay(100);
         NavigationManager.NavigateTo("/admin/categories");
     }
     private async Task NavigateToProductTypes()
     {
+        showUserMenu = false;
         await Task.Delay(100);
         NavigationManager.NavigateTo("/admin/product-types");
+    }
+    private async Task NavigateToProducts()
+    {
+        showUserMenu = false;
+        await Task.Delay(100);
+        NavigationManager.NavigateTo("/admin/products");
     }
 }
    
