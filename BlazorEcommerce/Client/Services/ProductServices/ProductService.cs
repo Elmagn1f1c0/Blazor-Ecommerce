@@ -89,9 +89,9 @@
 
         public async Task<Product> UpdateProduct(Product product)
         {
-            var result = await _http.PutAsJsonAsync($"api/product", product);
-            var content = await result.Content.ReadFromJsonAsync<ServiceResponse<Product>>();
-            return content.Data;
+            var result = await _http.PutAsJsonAsync("api/product", product);
+            return (await result.Content.ReadFromJsonAsync<ServiceResponse<Product>>()).Data;
+           
         }
     }
 }
