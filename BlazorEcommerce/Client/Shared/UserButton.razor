@@ -32,6 +32,7 @@
 
     private string UserMenuCssClass => showUserMenu ? "show-menu" : null;
 
+
     private void ToggleUserMenu()
     {
         showUserMenu = !showUserMenu;
@@ -39,26 +40,26 @@
     private async Task NavigateToProfile()
     {
         showUserMenu = false;
-        await Task.Delay(100);
+        await Task.Delay(200);
         NavigationManager.NavigateTo("/profile");
     }
     private async Task NavigateToOrders()
     {
         showUserMenu = false;
-        await Task.Delay(100);
+        await Task.Delay(200);
         NavigationManager.NavigateTo("/orders");
     }
 
     private async Task NavigateToRegister()
     {
         showUserMenu = false;
-        await Task.Delay(100);
+        await Task.Delay(200);
         NavigationManager.NavigateTo("/register");
     }
     private async Task NavigateToLogin()
     {
         showUserMenu = false;
-        await Task.Delay(100);
+        await Task.Delay(200);
         NavigationManager.NavigateTo("/login");
     }
     private async Task Logout()

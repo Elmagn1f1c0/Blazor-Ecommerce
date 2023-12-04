@@ -5,11 +5,13 @@
 @if (authorized)
 {
     <a class="dropdown-item" href="admin/categories" @onclick="NavigateToCategories">Categories</a>
+    <a class="dropdown-item" href="admin/product-types" @onclick="NavigateToProductTypes">Product Types</a>
     <hr />
 }
 
 @code {
     bool authorized = false;
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -22,8 +24,13 @@
     }
     private async Task NavigateToCategories()
     {
-       
         await Task.Delay(100);
         NavigationManager.NavigateTo("/admin/categories");
     }
+    private async Task NavigateToProductTypes()
+    {
+        await Task.Delay(100);
+        NavigationManager.NavigateTo("/admin/product-types");
+    }
 }
+   
