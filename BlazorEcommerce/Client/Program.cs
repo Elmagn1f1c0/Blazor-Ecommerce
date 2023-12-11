@@ -8,6 +8,7 @@ global using BlazorEcommerce.Client.Services.CartService;
 global using BlazorEcommerce.Client.Services.OrderService;
 global using BlazorEcommerce.Client.Services.AddressService;
 global using BlazorEcommerce.Client.Services.ProductTypeService;
+global using MudBlazor.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Blazored.LocalStorage;
@@ -34,6 +35,7 @@ namespace BlazorEcommerce.Client
             builder.Services.AddBlazoredLocalStorage();
             builder.Services.AddOptions();
             builder.Services.AddAuthorizationCore();
+            builder.Services.AddMudServices();
             builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
 
             await builder.Build().RunAsync();
