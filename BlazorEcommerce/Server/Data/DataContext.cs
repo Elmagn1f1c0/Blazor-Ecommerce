@@ -1,4 +1,6 @@
-﻿namespace BlazorEcommerce.Server.Data
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace BlazorEcommerce.Server.Data
 {
     public class DataContext : DbContext
     {
@@ -261,6 +263,9 @@
                 }
             );
         }
+        
+            
+       
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }

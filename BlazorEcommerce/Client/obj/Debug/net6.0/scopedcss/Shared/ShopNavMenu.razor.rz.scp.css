@@ -57,7 +57,7 @@
         display: flex;
     }
     .collapse[b-d3ua3ebcma] {
-        /* Never collapse the sidebar for wide screens */
         display: block;
     }
 }
+

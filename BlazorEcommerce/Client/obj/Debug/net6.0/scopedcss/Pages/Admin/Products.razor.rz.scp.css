@@ -2,3 +2,12 @@
     max-height: 100px;
     max-width: 100px;
 }
+
+.table[b-31vej7wq1l] {
+    background-color: #0000;
+    font-weight: bold;
+}
+.dark-mode .table[b-31vej7wq1l] {
+    color: #dfdfdf; /* Set the background color to white */
+}
+

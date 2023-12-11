@@ -52,6 +52,15 @@ img[b-31vej7wq1l] {
     max-height: 100px;
     max-width: 100px;
 }
+
+.table[b-31vej7wq1l] {
+    background-color: #0000;
+    font-weight: bold;
+}
+.dark-mode .table[b-31vej7wq1l] {
+    color: #dfdfdf; /* Set the background color to white */
+}
+
 /* /Pages/Admin/ProductTypes.razor.rz.scp.css */
 .row[b-csx47llx4i] {
     display: flex;
@@ -380,7 +389,6 @@ main[b-7v9fucczvh] {
     }
 
     .collapse[b-d7qi8mznuc] {
-        /* Never collapse the sidebar for wide screens */
         display: block;
     }
 }
@@ -549,10 +557,10 @@ main[b-eyye3xe6ci] {
         display: flex;
     }
     .collapse[b-d3ua3ebcma] {
-        /* Never collapse the sidebar for wide screens */
         display: block;
     }
 }
+
 /* /Shared/UserButton.razor.rz.scp.css */
 .show-menu[b-l31arl77u2] {
     display: block;
