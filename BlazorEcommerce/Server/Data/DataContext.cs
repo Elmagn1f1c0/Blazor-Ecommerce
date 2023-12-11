@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Security.Cryptography;
 
 namespace BlazorEcommerce.Server.Data
 {
@@ -13,7 +14,7 @@ namespace BlazorEcommerce.Server.Data
             modelBuilder.Entity<ProductVariant>()
                 .HasKey(x => new { x.ProductId, x.ProductTypeId });
             modelBuilder.Entity<OrderItem>()
-                .HasKey(x => new { x.OrderId, x.ProductId, x.ProductTypeId,  });
+                .HasKey(x => new { x.OrderId, x.ProductId, x.ProductTypeId, });
 
 
             modelBuilder.Entity<ProductType>().HasData(
@@ -262,10 +263,31 @@ namespace BlazorEcommerce.Server.Data
                     OriginalPrice = 399m
                 }
             );
+            var adminEmail = "chibueze@gmail.com"; 
+            var adminPassword = "Chibueze123@"; 
+
+            var adminUser = new User
+            {
+                Id = 1,
+                Email = adminEmail,
+                Role = "Admin" 
+            };
+
+            CreatePasswordHash(adminPassword, out byte[] passwordHash, out byte[] passwordSalt);
+            adminUser.PasswordHash = passwordHash;
+            adminUser.PasswordSalt = passwordSalt;
+
+            modelBuilder.Entity<User>().HasData(adminUser);
+
         }
-        
-            
-       
+        private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+        {
+            using (var hmac = new HMACSHA512())
+            {
+                passwordSalt = hmac.Key;
+                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+            }
+        }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -278,5 +300,6 @@ namespace BlazorEcommerce.Server.Data
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Image> Images { get; set; }
     }
+
 }
 

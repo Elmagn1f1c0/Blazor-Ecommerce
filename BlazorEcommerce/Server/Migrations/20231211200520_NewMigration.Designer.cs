@@ -4,6 +4,7 @@ using BlazorEcommerce.Server.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorEcommerce.Server.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20231211200520_NewMigration")]
+    partial class NewMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -642,10 +644,10 @@ namespace BlazorEcommerce.Server.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2023, 12, 11, 21, 42, 34, 417, DateTimeKind.Local).AddTicks(1997),
+                            DateCreated = new DateTime(2023, 12, 11, 21, 5, 20, 77, DateTimeKind.Local).AddTicks(2014),
                             Email = "chibueze@gmail.com",
-                            PasswordHash = new byte[] { 254, 182, 218, 136, 124, 79, 159, 40, 27, 222, 49, 105, 191, 162, 254, 69, 154, 94, 234, 161, 185, 159, 249, 95, 83, 254, 138, 72, 36, 133, 119, 203, 0, 136, 155, 89, 32, 86, 224, 18, 167, 138, 250, 32, 244, 83, 9, 128, 93, 166, 56, 80, 69, 102, 88, 1, 168, 231, 246, 114, 82, 180, 201, 161 },
-                            PasswordSalt = new byte[] { 245, 178, 223, 104, 196, 239, 62, 170, 146, 76, 8, 90, 28, 224, 182, 88, 53, 246, 98, 188, 212, 113, 61, 238, 34, 214, 251, 233, 31, 59, 57, 248, 243, 2, 129, 12, 81, 20, 37, 168, 13, 129, 40, 186, 250, 12, 147, 49, 161, 114, 68, 254, 65, 29, 67, 156, 166, 86, 255, 186, 62, 34, 24, 97, 57, 228, 7, 75, 155, 101, 223, 8, 97, 68, 21, 142, 8, 190, 241, 218, 94, 238, 130, 102, 188, 119, 190, 89, 28, 96, 121, 92, 11, 153, 119, 113, 175, 155, 108, 175, 117, 107, 103, 123, 200, 234, 119, 190, 99, 225, 13, 203, 147, 58, 210, 130, 75, 22, 71, 102, 23, 178, 196, 142, 155, 222, 215, 163 },
+                            PasswordHash = new byte[] { 1, 0, 0, 0, 1, 0, 0, 39, 16, 0, 0, 0, 16, 169, 123, 251, 58, 59, 192, 172, 238, 25, 102, 133, 166, 209, 76, 34, 10, 102, 2, 125, 175, 96, 181, 66, 90, 203, 227, 72, 34, 0, 174, 67, 244, 62, 245, 204, 210, 115, 157, 143, 250, 121, 13, 25, 143, 244, 17, 200, 68 },
+                            PasswordSalt = new byte[] { 100, 26, 233, 218, 22, 24, 191, 120, 95, 212, 201, 69, 180, 4, 158, 86 },
                             Role = "Admin"
                         });
                 });
