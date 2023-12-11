@@ -4,9 +4,9 @@
 
 @if (authorized)
 {
+    <a class="dropdown-item" @onclick:preventDefault href="admin/products" @onclick="NavigateToProducts">Products</a>
     <a class="dropdown-item" @onclick:preventDefault href="admin/categories" @onclick="NavigateToCategories">Categories</a>
     <a class="dropdown-item" @onclick:preventDefault href="admin/product-types" @onclick="NavigateToProductTypes">Product Types</a>
-    <a class="dropdown-item" @onclick:preventDefault href="admin/products" @onclick="NavigateToProducts">Products</a>
     <hr />
 }
 
@@ -51,4 +51,7 @@
         NavigationManager.NavigateTo("/admin/products");
     }
 }
+
    
+
+ 

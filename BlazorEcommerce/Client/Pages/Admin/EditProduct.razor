@@ -204,7 +204,7 @@ else
         {
             product.IsNew = false;
             product = await ProductService.UpdateProduct(product);
-            NavigationManager.NavigateTo($"admin/product/{product.Id}", true);
+            NavigationManager.NavigateTo("admin/products/", true);
         }
 
     }

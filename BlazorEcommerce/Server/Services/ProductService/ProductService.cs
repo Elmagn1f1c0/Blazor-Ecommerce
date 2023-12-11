@@ -185,10 +185,10 @@
             };
             return response;
         }
-
         public async Task<ServiceResponse<Product>> UpdateProduct(Product product)
         {
-            var dbProduct = await _context.Products.FindAsync(product.Id);
+            var dbProduct = await _context.Products.Include(p => p.Variants).FirstOrDefaultAsync(p => p.Id == product.Id);
+
             if (dbProduct == null)
             {
                 return new ServiceResponse<Product>
@@ -198,27 +198,26 @@
                 };
             }
 
+            // Update the properties of the main Product entity
             dbProduct.Title = product.Title;
             dbProduct.Description = product.Description;
             dbProduct.ImageUrl = product.ImageUrl;
             dbProduct.CategoryId = product.CategoryId;
             dbProduct.Visible = product.Visible;
+            dbProduct.Variants = product.Variants;
             dbProduct.Featured = product.Featured;
-           
-            
 
             foreach (var variant in product.Variants)
             {
-                var dbVariant = await _context.ProductVariants.SingleOrDefaultAsync(v => v.ProductId == variant.ProductId && v.ProductTypeId == variant.ProductTypeId);
+                var dbVariant = dbProduct.Variants.FirstOrDefault(v => v.ProductId == variant.ProductId);
 
-                if(dbVariant == null)
+                if (dbVariant == null)
                 {
-                    variant.ProductType = null;
-                    _context.ProductVariants.Add(variant);
+                    dbProduct.Variants.Add(variant);
                 }
                 else
                 {
-                    dbVariant.ProductTypeId = variant.ProductId;
+                    // Update the properties of the existing variant
                     dbVariant.Price = variant.Price;
                     dbVariant.OriginalPrice = variant.OriginalPrice;
                     dbVariant.Visible = variant.Visible;
@@ -226,10 +225,18 @@
                 }
             }
 
+            // Remove any variants from the DB product that are not in the updated product
+            var variantsToRemove = dbProduct.Variants.Where(v => !product.Variants.Any(pv => pv.ProductTypeId == v.ProductTypeId)).ToList();
+            foreach (var variantToRemove in variantsToRemove)
+            {
+                dbProduct.Variants.Remove(variantToRemove);
+            }
+
             await _context.SaveChangesAsync();
+
             return new ServiceResponse<Product>
             {
-                Data = product
+                Data = dbProduct
             };
         }
 
