@@ -69,6 +69,14 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\images\\Login.png",
+      "PackagePath": "staticwebassets\\images\\Login.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\images\\Register.png",
+      "PackagePath": "staticwebassets\\images\\Register.png"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\BlazorEcommerce\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

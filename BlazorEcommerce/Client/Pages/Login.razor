@@ -6,28 +6,76 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject ICartService CartService
 
+
 <PageTitle>Login</PageTitle>
+<style>
+    body {
+        overflow: hidden;
+    }
 
-<h3>Login</h3>
+    #hero-img {
+        width: 100%;
+        height: 490px;
+    }
 
-<EditForm Model="user" OnValidSubmit="HandleLogin">
-    <DataAnnotationsValidator />
-    <div class="mb-3">
-        <label for="email">Email</label>
-        <InputText id="email" @bind-Value="user.Email" class="form-control"/>
-        <ValidationMessage For="@(() => user.Email)" />
+    .full-width-button {
+        width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+
+    input[type="text"],
+    input[type="password"] {
+        height: 50px;
+        width: 100%;
+    }
+
+    .btn-outline-success.full-width-button {
+        height: 60px;
+        width: 100%;
+    }
+</style>
+
+<div class="row shadow">
+    <div class="col-md-6">
+        <img src="/images/Login.png" alt="Image" class="w-100" id="hero-img" />
     </div>
-    <div class="mb-3">
-        <label for="password">Password</label>
-        <InputText id="password" @bind-Value="user.Password" class="form-control" type="password"/>
-        <ValidationMessage For="@(() => user.Password)" />
+    <div class="col-md-6">
+        <h3 class="text-center">SIGN IN</h3>
+
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <EditForm Model="user" OnValidSubmit="HandleLogin">
+                    <DataAnnotationsValidator />
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <InputText id="email" @bind-Value="user.Email" class="form-control" type="text" placeholder="Enter your email" />
+                        <ValidationMessage For="@(() => user.Email)" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Password</label>
+                        <InputText id="password" @bind-Value="user.Password" class="form-control" type="password" placeholder="Enter your password" />
+                        <ValidationMessage For="@(() => user.Password)" />
+                    </div>
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-success full-width-button">SIGN IN</button>
+                    </div>
+                    <div class="signup-link">
+                        <span>Don't have an account? </span>
+                         <NavLink href="/register">Sign Up</NavLink>
+                    </div>
+
+                </EditForm>
+            </div>
+        </div>
     </div>
-    
-    <button type="submit" class="btn btn-primary">Login</button>
-    
-</EditForm>
-<div class="text-danger">
-    <span>@errorMessage</span>
+
+    <div class="text-danger">
+        <span>@errorMessage</span>
+    </div>
 </div>
 
 @code {
